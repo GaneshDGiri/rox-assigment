@@ -1,0 +1,9 @@
+.star-rating button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.star-rating button:focus {
+    transform: scale(1.2);
+}

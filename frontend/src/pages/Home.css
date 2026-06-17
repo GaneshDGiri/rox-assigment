@@ -1,0 +1,10 @@
+.home-page {
+    background-image: radial-gradient(circle at top left, rgba(56, 189, 248, 0.08), transparent 30%),
+                      radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.1), transparent 25%);
+}
+.home-hero {
+    min-height: calc(100vh - 0px);
+}
+.home-feature-card {
+    border-image: linear-gradient(135deg, rgba(59, 130, 246, 0.35), rgba(125, 211, 252, 0.25)) 1;
+}
