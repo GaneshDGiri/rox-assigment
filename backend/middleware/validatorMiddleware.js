@@ -9,7 +9,7 @@ const handleValidationErrors = (req, res, next) => {
 };
 
 const validateUserRegistration = [
-    body('name').isLength({ min: 20, max: 60 }).withMessage('Name must be 20-60 characters'),
+    body('name').isLength({ min: 3, max: 60 }).withMessage('Name must be 3-60 characters'),
     body('email').isEmail().withMessage('Invalid email format'),
     body('password').matches(/^(?=.*[A-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/)
         .withMessage('Password must be 8-16 chars, contain 1 uppercase and 1 special char'),

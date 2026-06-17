@@ -53,7 +53,7 @@ const AdminDashboard = () => {
         e.preventDefault();
         setFormError('');
         try {
-            await api.post('/auth/signup', newUser);
+            await api.post('/users', newUser);
             setShowAddModal(false);
             setNewUser({ name: '', email: '', password: '', address: '', role: 'Normal User' });
             fetchDashboardData();
@@ -260,7 +260,7 @@ const AdminDashboard = () => {
                         {formError && <div className="bg-red-100 text-red-600 p-3 rounded mb-4 text-sm">{formError}</div>}
                         
                         <form onSubmit={handleAddUser} className="space-y-4">
-                            <input type="text" placeholder="Full Name (20-60 chars)" required 
+                            <input type="text" placeholder="Full Name (3-60 chars)" required 
                                 className="w-full px-3 py-2 border rounded focus:border-primary outline-none"
                                 value={newUser.name} onChange={(e) => setNewUser({...newUser, name: e.target.value})} />
                             
