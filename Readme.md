@@ -17,16 +17,21 @@ To test the application with full administrative privileges, use the following c
 ## 📸 Application Screenshots
 
 ### Landing Page
-![Landing Page](./Screenshot%20(265).jpg)
+<img width="1920" height="1080" alt="Screenshot (271)" src="https://github.com/user-attachments/assets/c10c050e-0b0e-4256-88a5-e1a3f436433e" />
+
 
 ### User & Store Owner Registration
-![Signup Page](./Screenshot%20(266).png)
+<img width="1920" height="1080" alt="Screenshot (274)" src="https://github.com/user-attachments/assets/f4fd0393-7df9-46a4-85c0-e857dc36ec35" />
+
 
 ### Platform Login
-![Login Page](./Screenshot%20(267).png)
+<img width="1920" height="1080" alt="Screenshot (272)" src="https://github.com/user-attachments/assets/6c5e17ef-7446-416e-a33d-170dbc68a0b1" />
+
 
 ### System Administrator Dashboard
-![Admin Dashboard](./Screenshot%20(264).jpg)
+<img width="1920" height="1080" alt="Screenshot (276)" src="https://github.com/user-attachments/assets/380b5ecf-3dd2-4e74-90f1-33b0a3a941f4" />
+<img width="1920" height="1080" alt="Screenshot (275)" src="https://github.com/user-attachments/assets/f4931d31-5f4a-4c36-9332-ed8454fbf022" />
+
 
 ---
 
