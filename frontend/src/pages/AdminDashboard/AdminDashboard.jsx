@@ -82,17 +82,19 @@ const AdminDashboard = () => {
 
     // Filter Logic
     const filteredUsers = users.filter(user => {
-        const matchesSearch = user.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                              user.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                              user.address.toLowerCase().includes(searchTerm.toLowerCase());
+        const normalizedSearch = searchTerm.toLowerCase();
+        const matchesSearch = (user.name ?? '').toLowerCase().includes(normalizedSearch) || 
+                              (user.email ?? '').toLowerCase().includes(normalizedSearch) ||
+                              (user.address ?? '').toLowerCase().includes(normalizedSearch);
         const matchesRole = roleFilter === 'All' || user.role === roleFilter;
         return matchesSearch && matchesRole;
     });
 
     const filteredStores = stores.filter(store => {
-        return store.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-               store.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
-               store.address.toLowerCase().includes(searchTerm.toLowerCase());
+        const normalizedSearch = searchTerm.toLowerCase();
+        return (store.name ?? '').toLowerCase().includes(normalizedSearch) || 
+               (store.email ?? '').toLowerCase().includes(normalizedSearch) ||
+               (store.address ?? '').toLowerCase().includes(normalizedSearch);
     });
 
     // Get only store owners for the dropdown
