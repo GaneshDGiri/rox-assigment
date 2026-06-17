@@ -78,6 +78,10 @@ const getUpdateRequestById = async (requestId) => {
     return rows[0];
 };
 
+const updateStoreAddress = async (storeId, address) => {
+    await db.query(`UPDATE Stores SET address = ? WHERE id = ?`, [address, storeId]);
+};
+
 const updateStoreById = async (storeId, name, email, address) => {
     await db.query(`UPDATE Stores SET name = ?, email = ?, address = ? WHERE id = ?`, [name, email, address, storeId]);
 };
